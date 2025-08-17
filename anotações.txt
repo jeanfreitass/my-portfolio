@@ -1,0 +1,27 @@
+anotações
+
+
+podemos criar variáveis com cores predefinidas {
+	
+	# Depois basta chamar como color: var(--main-color)
+
+	:root {
+   	  --bg-color: #000000;
+   	  --snd-bg-color: #ad61a7;
+    	  --text-color: #ffffff;
+    	  --main-color: #1a0025;
+    	  --rgba:rgba(54, 0, 50, 0.9);
+	}
+	
+}
+
+transforma o texto em gradiente {
+    background: linear-gradient(45deg, #000 40%, #fff 98%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
