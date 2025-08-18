@@ -21,7 +21,15 @@ transforma o texto em gradiente {
     -webkit-text-fill-color: transparent;
 }
 
+adiciona o scroll e define cor {
+	::-webkit-scrollbar{
+		width: 15px;
+	}
+	::-webkit-scrollbar-thumb{
+		background-color: var(--main-color);
+	}
+}
 
-
+possivel cor :#1a0025;
 
 

@@ -11,10 +11,10 @@
 
 :root {
     --bg-color: #000000;
-    --snd-bg-color: #ad61a7;
-    --text-color: #ffffff;
-    --main-color: #1a0025;
-    --rgba:rgba(54, 0, 50, 0.9);
+    --snd-bg-color: #b8b8ff;
+    --text-color: #f8f7ff;
+    --main-color: #9381ff;
+    --rgba:rgba(147, 129, 255, 0.9);
 }
 
 html {
@@ -64,14 +64,29 @@ section {
 }
 
 .navbar a {
+    position: relative; 
     font-size: 1.9rem;
     color: var(--snd-bg-color);
     margin-left: 4rem;
     font-weight: 700;
     transition: 0.3s ease-in-out;
+    text-decoration: none; 
 }
 
-.navbar{}
+.navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* distância abaixo do texto */
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--text-color);
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
 
 .navbar a:hover,
 .navbar a.active {
@@ -145,9 +160,11 @@ span {
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.3;
-    background: linear-gradient(45deg, var(--main-color)40%, #fff 98%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: linear-gradient(45deg, var(--main-color) 40%, #fff 85%);
+    background-clip: text;            
+    -webkit-background-clip: text;     
+    color: transparent;                
+    -webkit-text-fill-color: transparent; 
 }
 
 .home-content p {
@@ -287,4 +304,110 @@ span {
 .services-box p {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
+}
+
+
+/* Education Section */
+
+.education{
+    padding: 100px 15px;
+    background: var(--snd-bg-color);
+}
+
+
+.education h2{
+    margin-bottom: 5rem;
+}
+
+.timeline-items{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.timeline-items::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: #000;
+    left: calc(50% - 1px);
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px) ;
+}
+
+.timeline-dot{
+    height: 21px;
+    width: 21px;
+    background: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color);
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top: 10px;
+}
+
+.timeline-date{
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--text-color);
+    margin: 6px 0 15px;
+}
+
+.timeline-content{
+    background: var(--bg-color);
+    border: 3px solid var(--main-color);
+    padding: 30px 50px;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px var(--main-color);
+    transition: 0.3s ease-in-out;
+}
+
+.timeline-content:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.timeline-content h3{
+    font-size: 20px;
+    color: var(--text-color);
+    margin: 0 0 10px;
+    font-weight: 500;
+}
+
+.timeline-content p{
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+}
+::-webkit-scrollbar-track{
+    background-color: var(--bg-color);
 }
