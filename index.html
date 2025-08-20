@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Dev Jean - Portfolio</title>
@@ -11,11 +12,12 @@
 
     <!---Header Section-->
     <header class="header">
-        <a href="#home" class="logo">Jean Freitas</a>
+        <a href="#home" class="logo">JF</a>
         <i class="bx bx-menu" id="menu-icon"></i>
         <nav class="navbar">
             <a href="#about" >About</a>
-            <a href="#projects">Projects</a>
+            <a href="#services">Services</a>
+            <a href="#education">Education</a>
             <a href="#contact">Contact</a>  
         </nav>
     </header>
@@ -37,7 +39,7 @@
                 <a href="https://github.com/jeanfreitass"><i class="bx bxl-github"></i></a>
                 <a href="https://wa.me/5561998251345"><i class="bx bxl-whatsapp"></i></a>
             </div>
-            <a href="assets/curriculum.pdf" class="btn" download="curriculum-jean-freitas.pdf">Download CV</a>
+            <a href="assets/curriculum.pdf" class="btn" download="curriculum-jean-freitas.pdf">Download CV <i class="fa-solid fa-file"></i></a>
         </div>
     </section>
 
@@ -48,7 +50,6 @@
             <h3>First, glad to see  <span>you!</span></h3>
             <h2 class="heading">About <span>Me</span></h2>
             <p>I'm a proactive and dedicated person, always seeking to find more efficient and practical ways to solve problems. I have a strong focus on customer experience, always striving to create solutions that are intuitive, creative, and enjoyable to use.</p>
-            <a href="" class="btn">Read More</a>
         </div>
         <div class="about-img">
             <img src="/assets/profile.png" alt="About Image">
@@ -62,24 +63,24 @@
         <div class="services-container">
 
             <div class="services-box">
-                <i class="bx bx-code"></i>
+                <i class="fa-solid fa-laptop-code"></i>
                 <h3>Web Development</h3>
-                <p>teste</p>
-                <a href="#" class="btn">Read More</a>
+                <p>Creating this website was a big step for me.</p>
+                <a href="https://github.com/jeanfreitass/my-portfolio" class="btn">Read More</a>
             </div>
 
             <div class="services-box">
-                <i class='bx  bx-mobile-alt'  ></i> 
+                <i class="fa-solid fa-mobile"></i>
                 <h3>App Development</h3>
-                <p>teste</p>
-                <a href="#" class="btn">Read More</a>
+                <p>An app made in react with auth in firebase</p>
+                <a href="https://github.com/jeanfreitass/Chefit" class="btn">Read More</a>
             </div>
 
             <div class="services-box">
-                <i class='bx bx-alarm'></i> 
-                <h3>Automatization Development</h3>
-                <p>teste</p>
-                <a href="#" class="btn">Read More</a>
+                <i class="fa-brands fa-python"></i>
+                <h3>Automatization</h3>
+                <p>Creation of new users and the OS installation, configuration boots.</p>
+                <a href="https://github.com/jeanfreitass/user-spawn" class="btn">Read More</a>
             </div>
 
         </div>
@@ -87,7 +88,7 @@
 
     <!--Education Section-->
 
-    <section class="education">
+    <section class="education" id="education">
 
         <h2 class="heading">Education</h2>
 
@@ -139,7 +140,7 @@
                 </div>
 
                 <textarea name="message" id="" placeholder="Your message" value="message"cols="30" rows="10" ></textarea>
-                <input type="submit" value="Send Message" class="btn" onclick="sendWhatsApp">
+                <input type="submit" value="Send Message" class="btn" onclick="sendWhatsApp"><i class="fa-solid fa-paper-plane" ></i>
             </form>
         </section>
 
