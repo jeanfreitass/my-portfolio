@@ -95,7 +95,7 @@ section {
 
 #menu-icon {
     font-size: 3.6rem;
-    color: var(--bg-color);
+    color: var(--text-color);
     cursor: pointer;
     display: none;
 }
@@ -220,6 +220,12 @@ span {
     justify-content: center;
     gap: 2rem;
     background: var(--snd-bg-color);
+}
+
+.about p{
+    font-size: 12px;
+    font-weight: 650;
+    line-height: 20px;
 }
 
 .about-img img{
