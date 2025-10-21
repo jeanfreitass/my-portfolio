@@ -222,6 +222,12 @@ span {
     background: var(--snd-bg-color);
 }
 
+.about p{
+    font-size: 12px;
+    font-weight: 650;
+    line-height: 20px;
+}
+
 .about-img img{
     width: 25vw;
     border: var(--main-color);
