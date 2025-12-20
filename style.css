@@ -312,6 +312,13 @@ span {
     margin: 1rem 0 3rem;
 }
 
+.services-container img {
+  max-width: 100%, 200px;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+
 
 /* Education Section */
 
