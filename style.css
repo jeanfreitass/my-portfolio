@@ -11,10 +11,10 @@
 
 :root {
     --bg-color: #000000;
-    --snd-bg-color: #b8b8ff;
+    --snd-bg-color: #004e41;
     --text-color: #f8f7ff;
-    --main-color: #9381ff;
-    --rgba:rgba(147, 129, 255, 0.9);
+    --main-color: #81ffcb;
+    --rgba:rgba(15, 153, 100, 0.9);
 }
 
 html {
@@ -312,8 +312,14 @@ span {
     margin: 1rem 0 3rem;
 }
 
+.services img {
+  margin: 20px 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .services-container img {
-  max-width: 100%, 200px;
+  max-width: 100%;
   height: auto;
   display: block;
   border-radius: 15px;
