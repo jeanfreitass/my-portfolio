@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons/css/flag-icons.min.css">
     <link rel="stylesheet" href="../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Dev Jean - Portfólio</title>
-    <link rel="icon" type="image/png" href="../assets/JF-logo.png" />
+    <link rel="icon" type="image/png" href="../assets/icons/JF-logo.png" />
 </head>
 <body>
     <!---Cabeçalho-->
@@ -20,14 +21,14 @@
             <a href="#services">Serviços</a>
             <a href="#education">Formação</a>
             <a href="#contact">Contato</a>  
-            <a href="../index.html">Language-EN</a>
+            <a href="../index.html"><span class="fi fi-us" style="font-size: 24px;"></span></a>
         </nav>
     </header>
 
     <!---Seção Início-->
     <section id="home" class="home">
         <div class="home-img">
-            <img src="../assets/perfilVerde.png" alt="Jean Freitas">
+            <img src="../assets/images/perfilVerde.png" alt="Jean Freitas">
         </div>
         <div class="home-content">
             <h3>Olá, eu sou</h3>
@@ -40,7 +41,7 @@
                 <a href="https://github.com/jeanfreitass"><i class="bx bxl-github"></i></a>
                 <a href="https://wa.me/5561998251345"><i class="bx bxl-whatsapp"></i></a>
             </div>
-            <a href="../assets/curriculum.pdf" class="btn" download="curriculum-jean-freitas.pdf">Baixar Currículo <i class="fa-solid fa-file"></i></a>
+            <a href="../assets/docs/curriculum.pdf" class="btn" download="curriculum-jean-freitas.pdf">Baixar Currículo <i class="fa-solid fa-file"></i></a>
         </div>
     </section>
 
@@ -52,7 +53,7 @@
             <p>Sou uma pessoa proativa e dedicada, sempre buscando formas mais eficientes e práticas de resolver problemas. Tenho forte foco na experiência do usuário, buscando sempre criar soluções intuitivas, criativas e agradáveis de usar.</p>
         </div>
         <div class="about-img">
-            <img src="../assets/perfilLadoVerde.png" alt="Imagem Sobre Mim">
+            <img src="../assets/images/perfilLadoVerde.png" alt="Imagem Sobre Mim">
         </div>
     </section>
 
@@ -63,25 +64,45 @@
 
             <div class="services-box">
                 <h3>Construção de API</h3>
-                <img src="../assets/api.gif" alt="API" >
+                <img src="../assets/images/api.gif" alt="API" >
                 <p>Javascript | Node | Jest | Swagger | MongoDB</p>
                 <a href="https://github.com/jeanfreitass/projeto-final-backend" class="btn">Repositório GitHub</a>
             </div>
 
             <div class="services-box">
                 <h3>Criação de apps</h3>
-                <img src="../assets/Movie001.gif" alt="Chefit App" >
+                <img src="../assets/images/Movie001.gif" alt="Chefit App" >
                 <p>React Native | Firebase | Expo</p>
                 <a href="https://github.com/jeanfreitass/Chefit" class="btn">Repositório GitHub</a>
             </div>
 
             <div class="services-box">
                 <h3>Automatização</h3>
-                <img src="../assets/automa.gif" alt="Automatization" >
+                <img src="../assets/images/automa.gif" alt="Automatization" >
                 <p>Python | Selenium | AD | PowerShell</p>
-                <a href="https://github.com/jeanfreitass/user-spawn" class="btn">Repositório privado por segurança</a>
+                <a href="https://github.com/jeanfreitass/user-spawn" class="btnPrivate">Repositório Privado</a>
             </div>
 
+            <div class="services-box">
+                <h3>API de imagens</h3>
+                <img src="../assets/images/galleryFullstack.png" alt="Galeria" >
+                <p>React | Java | Spring | PostgreSQL | Docker</p>
+                <a href="https://github.com/jeanfreitass/galleryFullStack" class="btn">Repositório GitHub</a>
+            </div>
+
+            <div class="services-box">
+                <h3>PDV Java</h3>
+                <img src="../assets/images/pdvJava.png" alt="PDV Java" >
+                <p>Java | NetBeans | MySQL </p>
+                <a href="https://github.com/jeanfreitass/curso-udemy-pdv" class="btn">Repositório GitHub</a>
+            </div>
+
+            <div class="services-box">
+                <h3>Sistema web de reciclagem</h3>
+                <img src="../assets/images/greenCoin.png" alt="GreenCoinWebSite" >
+                <p>React | Vite | JavaScript </p>
+                <a href="https://github.com/jeanfreitass/Green-Coin" class="btn">Repositório GitHub</a>
+            </div>
         </div>
     </section>
 
@@ -105,7 +126,7 @@
                 <div class="timeline-date">2023</div>
                 <div class="timeline-content">
                     <h3>Faculdade</h3>
-                    <p>Cursei Análise e Desenvolvimento de Sistemas no IESB, onde aprofundei meus conhecimentos em programação, banco de dados e desenvolvimento web. Participei de projetos práticos que envolvem criação de aplicações e soluções digitais, aprimorando minhas habilidades em React, JavaScript e gerenciamento de dados. A faculdade tem sido essencial para fortalecer meu pensamento crítico e minha capacidade de resolver problemas complexos.</p>
+                    <p>Cursei Análise e Desenvolvimento de Sistemas no IESB, onde aprofundei meus conhecimentos em programação, banco de dados e desenvolvimento web. Participei de projetos práticos que envolvem criação de aplicações e soluções digitais, aprimorando minhas habilidades em React, JavaScript, APIs REST, Python e gerenciamento de dados. A faculdade tem sido essencial para fortalecer meu pensamento crítico e minha capacidade de resolver problemas complexos.</p>
                 </div>
             </div>
 
@@ -114,7 +135,7 @@
                 <div class="timeline-date">2024</div>
                 <div class="timeline-content">
                     <h3>Primeiro Emprego</h3>
-                    <p>Trabalhei com suporte técnico em TI, atendendo diversos setores como jurídico, financeiro e administrativo. Atuei com manutenção, configuração de sistemas, suporte remoto e aplicação de boas práticas de segurança da informação (ISO 27001). Essa experiência tem desenvolveu meu foco em soluções práticas, atendimento ao cliente e aprendizado contínuo em tecnologia.</p>
+                    <p> Atuei como Suporte Técnico N1/N2 na Dunice & Marcon Advogados por 1 ano, realizando administração de usuários e permissões no Active Directory e Microsoft 365, gestão de chamados com SLA via GLPI e manutenção de hardware e software.</p>
                 </div>
             </div>         
 
