@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons/css/flag-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Dev Jean - Portfolio</title>
-    <link rel="icon" type="image/png" href="assets/JF-logo.png" />
+    <link rel="icon" type="image/png" href="assets/icons/JF-logo.png" />
 </head>
 <body>
     <!---Header Section-->
@@ -20,7 +21,7 @@
             <a href="#services">Services</a>
             <a href="#education">Education</a>
             <a href="#contact">Contact</a>  
-            <a href="./pt/index.html">Linguagem-PTBR</a>
+            <a href="./pt/index.html"><span class="fi fi-br" style="font-size: 24px;"></span></a>
         </nav>
     </header>
 
@@ -28,7 +29,7 @@
 
     <section id="home" class="home">
         <div class="home-img">
-            <img src="assets/perfilVerde.png" alt="Jean Freitas">
+            <img src="assets/images/perfilVerde.png" alt="Jean Freitas">
         </div>
         <div class="home-content">
             <h3>Hello, Myself</h3>
@@ -41,7 +42,7 @@
                 <a href="https://github.com/jeanfreitass"><i class="bx bxl-github"></i></a>
                 <a href="https://wa.me/5561998251345"><i class="bx bxl-whatsapp"></i></a>
             </div>
-            <a href="assets/curriculum.pdf" class="btn" download="curriculum-jean-freitas.pdf">Download CV <i class="fa-solid fa-file"></i></a>
+            <a href="assets/docs/curriculum.pdf" class="btn" download="curriculum-jean-freitas.pdf">Download CV <i class="fa-solid fa-file"></i></a>
         </div>
     </section>
 
@@ -54,7 +55,7 @@
             <p>I'm a proactive and dedicated person, always seeking to find more efficient and practical ways to solve problems. I have a strong focus on customer experience, always searching to create solutions that are intuitive, creative, and enjoyable to use.</p>
         </div>
         <div class="about-img">
-            <img src="assets/perfilLadoVerde.png" alt="About Image">
+            <img src="assets/images/perfilLadoVerde.png" alt="About Image">
         </div>
     </section>
 
@@ -66,25 +67,45 @@
 
             <div class="services-box">
                 <h3>API development</h3>
-                <img src="./assets/api.gif" alt="API" >
+                <img src="./assets/images/api.gif" alt="API" >
                 <p>Javascript | Node | Jest | Swagger | MongoDB</p>
                 <a href="https://github.com/jeanfreitass/projeto-final-backend" class="btn">Git repository</a>
             </div>
 
             <div class="services-box">
                 <h3>App development</h3>
-                <img src="./assets/Movie001.gif" alt="Chefit App" >
+                <img src="./assets/images/Movie001.gif" alt="Chefit App" >
                 <p>React Native | Firebase | Expo</p>
                 <a href="https://github.com/jeanfreitass/Chefit" class="btn">Git repository</a>
             </div>
 
             <div class="services-box">
                 <h3>Automatization</h3>
-                <img src="./assets/automa.gif" alt="Automatization" >
+                <img src="./assets/images/automa.gif" alt="Automatization" >
                 <p>Python | Selenium | AD | PowerShell</p>
                 <a href="https://github.com/jeanfreitass/user-spawn" class="btn">Repository privated for security</a>
             </div>
 
+            <div class="services-box">
+                <h3>Photo Gallery</h3>
+                <img src="./assets/images/galleryFullstack.png" alt="Galeria" >
+                <p>React | Java | Spring | PostgreSQL | Docker</p>
+                <a href="https://github.com/jeanfreitass/galleryFullStack" class="btn">Git repository</a>
+            </div>
+
+            <div class="services-box">
+                <h3>PDV Java</h3>
+                <img src="./assets/images/pdvJava.png" alt="PDV Java" >
+                <p>Java | NetBeans | MySQL </p>
+                <a href="https://github.com/jeanfreitass/curso-udemy-pdv" class="btn">Repositório GitHub</a>
+            </div>
+
+            <div class="services-box">
+                <h3>Recycling system</h3>
+                <img src="./assets/images/greenCoin.png" alt="GreenCoinWebSite" >
+                <p>React | Vite | JavaScript </p>
+                <a href="https://github.com/jeanfreitass/Green-Coin" class="btn">Git repository</a>
+            </div>
         </div>
     </section>
 
@@ -110,7 +131,7 @@
                 <div class="timeline-date">2023</div>
                 <div class="timeline-content">
                     <h3>University</h3>
-                    <p>I studied Systems Analysis and Development at IESB, where I deepened my knowledge in programming, databases, and web development. I participated in practical projects involving the creation of applications and digital solutions, improving my skills in React, JavaScript, and data management. The university has been fundamental in strengthening my critical thinking and my ability to solve complex problems.</p>
+                    <p>I studied Systems Analysis and Development at IESB, where I deepened my knowledge in programming, databases, and web development. I participated in practical projects involving the creation of applications and digital solutions, improving my skills in React, JavaScript, APIs REST, Python and data management. The university has been fundamental in strengthening my critical thinking and my ability to solve complex problems.</p>
                 </div>
             </div>
 
@@ -120,7 +141,7 @@
                 <div class="timeline-date">2024</div>
                 <div class="timeline-content">
                     <h3>First Job</h3>
-                    <p>I worked in IT technical support, serving various departments such as legal, finance, and administration. My activities included maintenance, system configuration, remote support, and application of best practices in information security (ISO 27001). This experience enhanced my focus on practical solutions, customer service, and continuous learning in technology.</p>
+                    <p>I worked as an N1/N2 IT Support Technician at Dunice & Marcon Advogados for one year, managing user accounts and permissions in Active Directory and Microsoft 365, handling SLA-based ticket management via GLPI and troubleshooting hardware and software issues.</p>
                 </div>
             </div>         
 
